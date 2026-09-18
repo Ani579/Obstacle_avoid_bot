@@ -2,14 +2,14 @@
 
 Servo sonarServo;
 
-// ---------- Ultrasonic ----------
+// Ultrasonic Sensor
 #define TRIG_PIN 10
 #define ECHO_PIN 11
 
-// ---------- Servo ----------
+// Servo Motor
 #define SERVO_PIN 12
 
-// ---------- L298N ----------
+// L298N Motor Driver
 #define ENA 5
 #define IN1 2
 #define IN2 3
@@ -18,7 +18,7 @@ Servo sonarServo;
 #define IN3 4
 #define IN4 7
 
-// ---------- Settings ----------
+// THE SETTINGS USED
 #define OBSTACLE_DISTANCE 20
 #define MOTOR_SPEED 180
 
@@ -28,7 +28,7 @@ Servo sonarServo;
 #define RIGHT 30
 
 
-// Measure distance using HC-SR04
+// Measure distance using HC-SR04 SONAR
 long getDistance() {
 
   digitalWrite(TRIG_PIN, LOW);
